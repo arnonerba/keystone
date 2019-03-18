@@ -23,8 +23,8 @@ if ( ! function_exists( 'keystone_setup' ) ) {
 			'custom-header',
 			array(
 				'default-image'          => get_template_directory_uri() . '/images/buildings.png',
-				'width'                  => 0,
-				'height'                 => 0,
+				'width'                  => 1600,
+				'height'                 => 1200,
 				'flex-width'             => true,
 				'flex-height'            => true,
 				'uploads'                => true,
