@@ -89,3 +89,43 @@ function keystone_enqueue_scripts_styles() {
 	wp_enqueue_style( 'keystone-style', get_stylesheet_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'keystone_enqueue_scripts_styles' );
+
+function keystone_customize_register( $wp_customize ) {
+	/*
+	Add color scheme options in the Theme Customizer.
+	*/
+	$wp_customize->add_setting(
+		'colorscheme',
+		array(
+			'default'           => 'light',
+			'sanitize_callback' => 'keystone_sanitize_colorscheme',
+		)
+	);
+	$wp_customize->add_control(
+		'colorscheme',
+		array(
+			'section'  => 'colors',
+			'label'    => __( 'Color Scheme', 'keystone' ),
+			'type'     => 'radio',
+			'choices'  => array(
+				'light'  => __( 'Light', 'keystone' ),
+				'dark'   => __( 'Dark', 'keystone' ),
+			),
+		)
+	);
+	/*
+	Remove Additional CSS section from the Theme Customizer.
+	*/
+	$wp_customize->remove_section( 'custom_css' );
+}
+add_action( 'customize_register', 'keystone_customize_register' );
+
+function keystone_sanitize_colorscheme( $input ) {
+	$valid = array( 'light', 'dark' );
+
+	if ( in_array( $input, $valid, true ) ) {
+		return $input;
+	}
+
+	return 'light';
+}
