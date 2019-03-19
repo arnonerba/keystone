@@ -80,7 +80,7 @@ function keystone_enqueue_scripts_styles() {
 	*/
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), array() , false, true );
-	wp_enqueue_script( 'keystone-scripts', get_template_directory_uri() . '/scripts.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
+	wp_enqueue_script( 'keystone-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
 	/*
 	Enqueue fonts from Google Fonts and default styles.
 	*/
