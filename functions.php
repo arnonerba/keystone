@@ -130,7 +130,7 @@ function keystone_sanitize_colorscheme( $input ) {
 
 	if ( in_array( $input, $valid, true ) ) {
 		return $input;
+	} else {
+		return 'light';
 	}
-
-	return 'light';
 }
