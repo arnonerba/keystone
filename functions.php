@@ -87,6 +87,11 @@ function keystone_enqueue_scripts_styles() {
 	wp_enqueue_style( 'google-fonts-material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), null );
 	wp_enqueue_style( 'google-fonts-roboto', 'https://fonts.googleapis.com/css?family=Roboto:400,700', array(), null );
 	wp_enqueue_style( 'keystone-style', get_stylesheet_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+	/*
+	Enqueue styles for selected color scheme.
+	*/
+	$theme = keystone_sanitize_colorscheme( get_theme_mod( 'colorscheme' ) );
+	wp_enqueue_style( 'keystone-' . $theme . '-style', get_template_directory_uri() . '/themes/' . $theme . '.css', array(), wp_get_theme()->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'keystone_enqueue_scripts_styles' );
 
