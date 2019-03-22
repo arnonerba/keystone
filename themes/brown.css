@@ -12,13 +12,20 @@ body {
 	background-color: #5D4037;
 }
 
+#home-showcase {
+	color: #FFF;
+}
+#home-showcase .flex-column.left {
+	background-color: #3E2723;
+}
+
 #footer {
 	color: #FFF;
 }
-.footer-column.left {
+#footer .flex-column.left {
 	background-color: #263238;
 }
-.footer-column.right {
+#footer .flex-column.right {
 	background-color: #37424B;
 }
 #footer-bottom-section {
