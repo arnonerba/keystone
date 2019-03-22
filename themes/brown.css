@@ -1,3 +1,7 @@
+body {
+	background-color: #F5F5F5;
+}
+
 #tab-bar {
 	color: #FFF;
 	background-color: #795548;
@@ -6,4 +10,18 @@
 #header {
 	color: #FFF;
 	background-color: #5D4037;
+}
+
+#footer {
+	color: #FFF;
+}
+
+.footer-column.left {
+	background-color: #263238;
+}
+.footer-column.right {
+	background-color: #37424B;
+}
+#footer-bottom-section {
+	background-color: #455A64;
 }
