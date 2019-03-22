@@ -9,7 +9,7 @@
 				</div>
 				<div class="footer-column right">
 					<div class="footer-container">
-						test
+						<?php wp_nav_menu( array( 'container' => false, 'theme_location' => 'footer' ) ); ?>
 					</div>
 				</div>
 			</section>

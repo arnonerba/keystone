@@ -76,6 +76,7 @@ if ( ! function_exists( 'keystone_setup' ) ) {
 		register_nav_menus(
 			array(
 				'tab-bar' => __( 'Tab Bar', 'keystone' ),
+				'footer' => __( 'Footer', 'keystone' ),
 			)
 		);
 	}
