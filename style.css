@@ -116,6 +116,12 @@ body.no-scroll {
 	bottom: 0;
 	left: 0;
 }
+#footer a {
+	color: inherit;
+}
+#footer ul {
+	margin: 0;
+}
 #footer-top-section {
 	display: flex;
 	flex-flow: row nowrap;
