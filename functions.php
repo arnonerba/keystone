@@ -70,6 +70,14 @@ if ( ! function_exists( 'keystone_setup' ) ) {
 		add_theme_support( 'responsive-embeds' );
 		add_theme_support( 'disable-custom-font-sizes' );
 		add_theme_support( 'disable-custom-colors' );
+		/*
+		Register navigation menus.
+		*/
+		register_nav_menus(
+			array(
+				'tab-bar' => __( 'Tab Bar', 'keystone' ),
+			)
+		);
 	}
 }
 add_action( 'after_setup_theme', 'keystone_setup' );
