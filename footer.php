@@ -2,14 +2,16 @@
 		</main>
 		<footer id="footer">
 			<section id="footer-top-section">
-				<div class="footer-column left">
-					<div class="footer-container">
-						test
+				<div class="flex-columns">
+					<div class="flex-column left">
+						<div class="flex-column-content">
+							test
+						</div>
 					</div>
-				</div>
-				<div class="footer-column right">
-					<div class="footer-container">
-						<?php wp_nav_menu( array( 'container' => 'nav', 'theme_location' => 'footer' ) ); ?>
+					<div class="flex-column right">
+						<div class="flex-column-content">
+							<?php wp_nav_menu( array( 'container' => 'nav', 'theme_location' => 'footer' ) ); ?>
+						</div>
 					</div>
 				</div>
 			</section>
