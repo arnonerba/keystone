@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<section id="page-showcase" style="background-image:url(<?php header_image(); ?>)"></section>
+	<section id="page-showcase" style="background-image:url(<?php ( has_post_thumbnail() ) ? the_post_thumbnail_url() : header_image(); ?>)"></section>
 	<div class="container">
 		<section id="page-content">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
