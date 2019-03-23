@@ -13,9 +13,18 @@
 	<div class="container">
 		<section id="page-content">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<h1>Welcome to <?php bloginfo( 'name' ); ?></h1>
-				<hr>
-				<?php the_content(); ?>
+				<?php if ( is_front_page() && is_home() ) { ?>
+					<article <?php post_class(); ?>>
+						<h1><?php the_title(); ?></h1>
+						<hr>
+						<p><time datetime="<?php echo get_the_date( 'c' ); ?>"><?php echo get_the_date(); ?></time> by <?php the_author_link(); ?></p>
+						<?php the_content(); ?>
+					</article>
+				<?php } else { ?>
+					<h1>Welcome to <?php bloginfo( 'name' ); ?></h1>
+					<hr>
+					<?php the_content(); ?>
+				<?php } ?>
 			<?php endwhile; endif; ?>
 		</section>
 	</div>
