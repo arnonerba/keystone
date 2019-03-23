@@ -121,7 +121,7 @@ p {
 	min-height: 100%;
 }
 .flex-column {
-	flex: 1 1 0%;
+	flex: 1 0 50%;
 	display: flex;
 	flex-flow: row nowrap;
 }
