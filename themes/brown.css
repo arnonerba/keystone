@@ -20,6 +20,10 @@ body {
 	background-color: #3E2723;
 }
 
+#page-content {
+	background-color: #FFF;
+}
+
 #footer {
 	color: #FFF;
 }
