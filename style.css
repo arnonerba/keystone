@@ -26,6 +26,11 @@ body.no-scroll {
 	overflow: hidden;
 }
 
+p {
+	margin: 16px 0;
+	line-height: 140%;
+}
+
 #wrapper {
 	position: absolute;
 	right: 0;
