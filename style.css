@@ -123,6 +123,8 @@ hr {
 	line-height: 48px;
 	font-size: 14px;
 	text-transform: uppercase;
+	letter-spacing: 0.75px;
+	font-weight: 700;
 	border-bottom: 3px solid transparent;
 	opacity: 0.65;
 	transition: opacity 0.2s;
@@ -138,10 +140,8 @@ hr {
 	margin: 0;
 	padding: 0 16px;
 	box-sizing: border-box;
-	text-decoration: none;
-	letter-spacing: 0.75px;
-	font-weight: 700;
 	color: inherit;
+	text-decoration: none;
 }
 
 #header {
