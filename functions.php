@@ -111,7 +111,7 @@ function keystone_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'colorscheme',
 		array(
-			'default'           => 'light',
+			'default'           => 'brown',
 			'sanitize_callback' => 'keystone_sanitize_colorscheme',
 		)
 	);
@@ -122,9 +122,9 @@ function keystone_customize_register( $wp_customize ) {
 			'label'    => __( 'Color Scheme', 'keystone' ),
 			'type'     => 'radio',
 			'choices'  => array(
-				'light'  => __( 'Light', 'keystone' ),
-				'black'  => __( 'Just Black', 'keystone' ),
 				'brown'  => __( 'So Brown', 'keystone' ),
+				'white'  => __( 'Clearly White', 'keystone' ),
+				'black'  => __( 'Just Black', 'keystone' ),
 			),
 		)
 	);
@@ -136,11 +136,11 @@ function keystone_customize_register( $wp_customize ) {
 add_action( 'customize_register', 'keystone_customize_register' );
 
 function keystone_sanitize_colorscheme( $input ) {
-	$valid = array( 'light', 'black', 'brown' );
+	$valid = array( 'brown', 'white', 'black' );
 
 	if ( in_array( $input, $valid, true ) ) {
 		return $input;
 	} else {
-		return 'light';
+		return 'brown';
 	}
 }
