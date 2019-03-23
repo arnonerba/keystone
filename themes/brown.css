@@ -13,10 +13,8 @@ body {
 	background-color: #5D4037;
 }
 
-#home-showcase {
+#home-showcase, #page-showcase {
 	color: #FFF;
-}
-#home-showcase .flex-column {
 	background-color: #3E2723;
 }
 
