@@ -186,9 +186,15 @@ hr {
 }
 .flex-column-content {
 	flex: 1 1 0%;
-	max-width: 500px;
+	max-width: 548px;
 	padding: 48px;
 	box-sizing: border-box;
+}
+.flex-column.left .flex-column-content {
+	padding-left: 96px;
+}
+.flex-column.right .flex-column-content {
+	padding-right: 96px;
 }
 
 #home-showcase, #page-showcase {
