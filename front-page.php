@@ -10,5 +10,14 @@
 			<div class="flex-column right" style="background-image:url(<?php header_image(); ?>)"></div>
 		</div>
 	</section>
+	<div class="container">
+		<section id="page-content">
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<h1>Welcome to <?php bloginfo( 'name' ); ?></h1>
+				<hr>
+				<?php the_content(); ?>
+			<?php endwhile; endif; ?>
+		</section>
+	</div>
 
 <?php get_footer(); ?>
