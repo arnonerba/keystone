@@ -3,6 +3,10 @@ body {
 	background-color: #F5F5F5;
 }
 
+a {
+	color: #5D4037;
+}
+
 #tab-bar {
 	color: #FFF;
 	background-color: #795548;
