@@ -70,6 +70,10 @@ hr {
 	border-top: 1px solid rgba(0,0,0,0.12);
 }
 
+figure {
+	margin: 0 0 16px 0;
+}
+
 #wrapper {
 	position: absolute;
 	right: 0;
