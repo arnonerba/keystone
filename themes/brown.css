@@ -34,3 +34,13 @@ body {
 #footer-bottom-section {
 	background-color: #455A64;
 }
+
+::selection {
+	background: #B3D4FC;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: #B3D4FC;
+	text-shadow: none;
+}
