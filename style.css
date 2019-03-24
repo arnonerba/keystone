@@ -253,3 +253,31 @@ figure {
 #footer-bottom-section .container {
 	justify-content: flex-end;
 }
+
+
+/*
+Styles for posts
+*/
+.post-date {
+	display: block;
+	margin: 0 0 8px 2px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+	font-weight: 700;
+}
+.post-thumbnail a img {
+	transition: opacity 0.2s;
+}
+.post-thumbnail a:hover img, .post-thumbnail a:focus img {
+	opacity: 0.85;
+}
+
+
+/*
+WordPress styles TODO: clean up
+*/
+img, video {
+	height: auto;
+	max-width: 100%;
+}
