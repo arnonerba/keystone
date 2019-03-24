@@ -8,4 +8,7 @@
 		<?php } ?>
 		<?php the_content(); ?>
 	</div>
-<?php endwhile; endif; ?>
+<?php endwhile; else : ?>
+	<hr>
+	<p>No posts found.</p>
+<?php endif; ?>
