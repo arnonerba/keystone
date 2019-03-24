@@ -1,4 +1,6 @@
 <?php ?>
+				</section>
+			</div>
 		</main>
 		<footer id="footer">
 			<section id="footer-top-section">
