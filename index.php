@@ -22,7 +22,7 @@
 		<?php get_template_part( 'templates/blogroll' ); ?>
 	<?php
 	/*
-	Author, Category, Tag, Date, other Taxonomy Term, or custom post type archive.
+	Author, Category, Tag, Date, other taxonomy term, or custom post type archive.
 	*/
 	} elseif ( is_archive() ) { ?>
 		<h1><?php the_archive_title(); ?></h1>
