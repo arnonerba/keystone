@@ -12,3 +12,5 @@
 	<hr>
 	<p>No posts found.</p>
 <?php endif; ?>
+
+<?php the_posts_pagination(); ?>
