@@ -12,7 +12,7 @@
 					</div>
 					<div class="flex-column right">
 						<div class="flex-column-content">
-							<?php wp_nav_menu( array( 'container' => 'nav', 'theme_location' => 'footer' ) ); ?>
+							<?php wp_nav_menu( array( 'container' => 'nav', 'depth' => 1, 'theme_location' => 'footer' ) ); ?>
 						</div>
 					</div>
 				</div>
