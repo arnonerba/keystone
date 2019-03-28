@@ -33,6 +33,7 @@
 	*/
 	} elseif ( is_search() ) { ?>
 		<h1>Search Results for "<?php the_search_query(); ?>"</h1>
+		<?php get_search_form(); ?>
 		<?php get_template_part( 'partials/blogroll' ); ?>
 	<?php
 	/*
