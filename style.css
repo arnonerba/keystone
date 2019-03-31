@@ -73,6 +73,25 @@ hr {
 	border-top: 1px solid rgba(0,0,0,0.12);
 }
 
+pre, textarea, code {
+	font-family: monospace;
+	box-sizing: border-box;
+	border-radius: 2px;
+	border: none;
+	background-color: rgba(0,0,0,0.12);
+	overflow: auto;
+}
+pre, textarea {
+	display: block;
+	width: 100%;
+	margin: 16px 0;
+	padding: 8px;
+	overflow: auto;
+}
+code {
+	padding: 3px;
+}
+
 figure {
 	margin: 0 0 16px 0;
 }
