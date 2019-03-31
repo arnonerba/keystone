@@ -55,7 +55,10 @@ h6 {
 p {
 	margin: 0 0 16px 0;
 }
-p, ul li, ol li {
+li {
+	margin: 0;
+}
+p, li {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	letter-spacing: 0.015625rem;
