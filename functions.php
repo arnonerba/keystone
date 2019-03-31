@@ -79,6 +79,13 @@ if ( ! function_exists( 'keystone_setup' ) ) {
 				'footer' => __( 'Footer', 'keystone' ),
 			)
 		);
+		/*
+		Increase the length of automatically generated excerpts.
+		*/
+		function keystone_excerpt_length( $length ) {
+			return 100;
+		}
+		add_filter( 'excerpt_length', 'keystone_excerpt_length' );
 	}
 }
 add_action( 'after_setup_theme', 'keystone_setup' );
