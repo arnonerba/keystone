@@ -240,7 +240,7 @@ figure {
 #footer a {
 	color: inherit;
 }
-#footer ul {
+#footer p, #footer ul {
 	margin: 0;
 }
 #footer-top-section {

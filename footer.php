@@ -19,7 +19,7 @@
 			</section>
 			<section id="footer-bottom-section">
 				<div class="container">
-					<span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. All rights reserved. <?php the_privacy_policy_link(); ?></span>
+					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. All rights reserved. <?php the_privacy_policy_link(); ?></p>
 				</div>
 			</section>
 		</footer>
