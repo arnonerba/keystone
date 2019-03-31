@@ -7,7 +7,7 @@ a {
 	color: #5D4037;
 }
 
-#tab-bar {
+#tab-bar, .sticky-post {
 	color: #FFF;
 	background-color: #795548;
 }

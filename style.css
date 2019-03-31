@@ -274,7 +274,10 @@ Styles for posts
 .post-thumbnail a:hover img, .post-thumbnail a:focus img {
 	opacity: 0.85;
 }
-
+.sticky-post {
+	margin: 0 8px;
+	padding: 2px 6px;
+}
 
 /*
 WordPress styles TODO: clean up
