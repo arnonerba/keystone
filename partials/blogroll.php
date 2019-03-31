@@ -6,7 +6,7 @@
 		<?php if ( has_post_thumbnail() ) { ?>
 			<figure class="post-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></figure>
 		<?php } ?>
-		<?php the_content(); ?>
+		<?php the_excerpt(); ?>
 	</div>
 <?php endwhile; else : ?>
 	<hr>
