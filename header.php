@@ -16,7 +16,7 @@
 		</nav>
 		<header id="header">
 			<div class="container">
-				<span><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></span>
+				<span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 			</div>
 		</header>
 		<main id="main">
