@@ -18,7 +18,7 @@
 		<?php the_comments_pagination(); ?>
 	<?php } ?>
 	<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) { ?>
-		<p>Comments are closed.</p>
+		<p><em>Comments are closed.</em></p>
 	<?php } ?>
 	<?php comment_form(); ?>
 </section>
