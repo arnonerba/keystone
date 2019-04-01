@@ -16,6 +16,7 @@
 			<?php wp_list_comments(); ?>
 		</ul>
 		<?php the_comments_pagination(); ?>
+		<hr>
 	<?php } ?>
 	<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) { ?>
 		<p><em>Comments are closed.</em></p>
