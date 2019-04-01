@@ -6,6 +6,7 @@
 		<h1><?php the_title(); ?></h1>
 		<hr>
 		<?php the_content(); ?>
+		<?php wp_link_pages(); ?>
 	</article>
 	<?php comments_template(); ?>
 <?php endwhile; endif; ?>
