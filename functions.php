@@ -108,6 +108,12 @@ function keystone_enqueue_scripts_styles() {
 	*/
 	$theme = keystone_sanitize_colorscheme( get_theme_mod( 'colorscheme' ) );
 	wp_enqueue_style( 'keystone-' . $theme . '-style', get_template_directory_uri() . '/themes/' . $theme . '.css', array(), wp_get_theme()->get( 'Version' ) );
+	/*
+	Add the comment-reply JavaScript to single post pages.
+	*/
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'keystone_enqueue_scripts_styles' );
 
