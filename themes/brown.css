@@ -7,6 +7,10 @@ a {
 	color: #5D4037;
 }
 
+hr {
+	border-color: rgba(0,0,0,0.12);
+}
+
 #tab-bar, .sticky-post {
 	color: #FFF;
 	background-color: #795548;
