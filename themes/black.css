@@ -1,6 +1,6 @@
 body {
 	color: #FFF;
-	background-color: #424242;
+	background-color: #303030;
 }
 
 a {
@@ -13,17 +13,17 @@ hr {
 
 #tab-bar, .sticky-post {
 	color: #FFF;
-	background-color: #212121;
+	background-color: #303030;
 }
 
 #header {
 	color: #FFF;
-	background-color: #424242;
+	background-color: #212121;
 }
 
 #home-showcase, #page-showcase {
 	color: #FFF;
-	background-color: #616161;
+	background-color: #101010;
 }
 
 #page-content {
@@ -34,13 +34,13 @@ hr {
 	color: #FFF;
 }
 #footer .flex-column.left {
-	background-color: #263238;
+	background-color: #101010;
 }
 #footer .flex-column.right {
-	background-color: #37424B;
+	background-color: #212121;
 }
 #footer-bottom-section {
-	background-color: #455A64;
+	background-color: #303030;
 }
 
 ::selection {
