@@ -1,6 +1,6 @@
 body {
-	color: #FFF;
-	background-color: #303030;
+	color: #D6D6D7;
+	background-color: #3C4043;
 }
 
 a {
@@ -12,35 +12,35 @@ hr {
 }
 
 #tab-bar, .sticky-post {
-	color: #FFF;
-	background-color: #303030;
+	color: #D6D6D7;
+	background-color: #3C4043;
 }
 
 #header {
-	color: #FFF;
-	background-color: #212121;
+	color: #D6D6D7;
+	background-color: #323639;
 }
 
 #home-showcase, #page-showcase {
-	color: #FFF;
-	background-color: #101010;
+	color: #D6D6D7;
+	background-color: #202124;
 }
 
 #page-content {
-	background-color: #212121;
+	background-color: #323639;
 }
 
 #footer {
-	color: #FFF;
+	color: #D6D6D7;
 }
 #footer .flex-column.left {
-	background-color: #101010;
+	background-color: #282C2F;
 }
 #footer .flex-column.right {
-	background-color: #212121;
+	background-color: #323639;
 }
 #footer-bottom-section {
-	background-color: #303030;
+	background-color: #202124;
 }
 
 ::selection {
