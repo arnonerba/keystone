@@ -137,7 +137,7 @@ function keystone_customize_register( $wp_customize ) {
 			'choices'  => array(
 				'brown'  => __( 'So Brown', 'keystone' ),
 				'white'  => __( 'Clearly White', 'keystone' ),
-				'black'  => __( 'Just Black', 'keystone' ),
+				'black'  => __( 'Fairly Dark', 'keystone' ),
 			),
 		)
 	);
