@@ -11,7 +11,7 @@ hr {
 	border-color: rgba(0,0,0,0.12);
 }
 
-#tab-bar, .sticky-post {
+#tab-bar {
 	color: #FFF;
 	background-color: #795548;
 }
@@ -28,6 +28,11 @@ hr {
 
 #page-content {
 	background-color: #FFF;
+}
+
+.sticky-post {
+	color: #FFF;
+	background-color: #795548;
 }
 
 #footer {
