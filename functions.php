@@ -1,5 +1,12 @@
 <?php
 
+if ( ! isset( $content_width ) ) {
+	/*
+	Default content width is 1000px - 96px padding.
+	*/
+	$content_width = 904;
+}
+
 if ( ! function_exists( 'keystone_setup' ) ) {
 	function keystone_setup() {
 		/*
