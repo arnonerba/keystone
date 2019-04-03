@@ -7,6 +7,14 @@
 		<hr>
 		<?php the_content(); ?>
 		<?php wp_link_pages(); ?>
+		<?php if ( has_category() ) { ?>
+			<h2>Categories:</h2>
+			<?php echo get_the_category_list(); ?>
+		<?php } ?>
+		<?php if ( has_tag() ) { ?>
+			<h2>Tags:</h2>
+			<?php echo get_the_tag_list( '<p>', ', ', '</p>' ); ?>
+		<?php } ?>
 	</article>
 	<?php comments_template(); ?>
 <?php endwhile; endif; ?>
