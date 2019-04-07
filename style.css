@@ -331,3 +331,16 @@ img, video {
 	height: auto;
 	max-width: 100%;
 }
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
