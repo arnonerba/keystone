@@ -10,12 +10,16 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: keystone
 */
 
+/*
+BEGIN element-level styles.
+*/
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
+
 body.no-scroll {
 	position: absolute;
 	top: 0;
@@ -31,22 +35,28 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	overflow-wrap: break-word;
 }
+
 h1 {
 	font-size: 2.125rem;
 	font-weight: 400;
 }
+
 h2 {
 	font-size: 1.5rem;
 }
+
 h3 {
 	font-size: 1.25rem;
 }
+
 h4 {
 	font-size: 1rem;
 }
+
 h5 {
 	font-size: 0.875rem;
 }
+
 h6 {
 	font-size: 0.875rem;
 	font-style: italic;
@@ -55,9 +65,11 @@ h6 {
 p {
 	margin: 0 0 16px 0;
 }
+
 li {
 	margin: 0;
 }
+
 p, li, dt, dd {
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -81,6 +93,7 @@ pre, textarea, code, tt, kbd, samp {
 	background-color: rgba(0,0,0,0.12);
 	overflow: auto;
 }
+
 pre, textarea {
 	display: block;
 	width: 100%;
@@ -88,6 +101,7 @@ pre, textarea {
 	padding: 8px;
 	overflow: auto;
 }
+
 code, tt, kbd, samp {
 	padding: 3px;
 }
@@ -95,7 +109,13 @@ code, tt, kbd, samp {
 figure {
 	margin: 0 0 16px 0;
 }
+/*
+END element-level styles.
+*/
 
+/*
+BEGIN page layout styles.
+*/
 #wrapper {
 	position: absolute;
 	right: 0;
@@ -113,71 +133,6 @@ figure {
 	min-height: 100%;
 	margin: auto;
 	padding: 0 48px;
-}
-
-#nav-drawer {
-	
-}
-#nav-drawer ul, #tab-bar ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-#tab-bar {
-	position: fixed;
-	z-index: 5;
-	top: 0;
-	right: 0;
-	left: 0;
-	height: 48px;
-	box-shadow: none;
-	transition: box-shadow 150ms ease-in-out;
-}
-#tab-bar.elevated {
-	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
-}
-#tab-bar ul {
-	display: flex;
-	flex-flow: row nowrap;
-}
-#tab-bar ul li {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	height: 48px;
-	line-height: 48px;
-	font-size: 0.875rem;
-	text-transform: uppercase;
-	letter-spacing: 0.0892857rem;
-	font-weight: 700;
-	border-bottom: 3px solid transparent;
-	opacity: 0.65;
-	transition: opacity 0.2s;
-}
-#tab-bar ul li.current-menu-item, #tab-bar ul li:hover {
-	opacity: 1;
-}
-#tab-bar ul li.current-menu-item {
-	border-color: inherit;
-}
-#tab-bar ul li a {
-	display: block;
-	margin: 0;
-	padding: 0 16px;
-	box-sizing: border-box;
-	color: inherit;
-	text-decoration: none;
-}
-
-#header {
-	padding-top: 48px;
-	height: 96px;
-	font-size: 1.5rem;
-}
-#header a {
-	color: inherit;
-	text-decoration: none;
 }
 
 #main {
@@ -201,26 +156,32 @@ figure {
 	flex-flow: row nowrap;
 	min-height: 100%;
 }
+
 .flex-column {
 	flex: 1 0 50%;
 	display: flex;
 	flex-flow: row nowrap;
 }
+
 .flex-column.left {
 	justify-content: flex-end;
 }
+
 .flex-column.right {
 	justify-content: flex-start;
 }
+
 .flex-column-content {
 	flex: 1 1 0%;
 	max-width: 548px;
 	padding: 48px;
 	box-sizing: border-box;
 }
+
 .flex-column.left .flex-column-content {
 	padding-left: 96px;
 }
+
 .flex-column.right .flex-column-content {
 	padding-right: 96px;
 }
@@ -228,6 +189,7 @@ figure {
 #home-showcase, #page-showcase {
 	position: relative;
 }
+
 #home-showcase::before, #page-showcase::before {
 	content: '';
 	display: block;
@@ -238,48 +200,149 @@ figure {
 	left: 0;
 	box-shadow: inset 0 8px 8px -5px rgba(0,0,0,0.25), inset 0 -8px 8px -5px rgba(0,0,0,0.25);
 }
+
 #page-showcase {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 224px;
 }
+
 #home-showcase p {
 	margin: 0;
 	font-size: 1.125rem;
 }
+
 #home-showcase .flex-column {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	padding-bottom: 112px;
 }
+/*
+END page layout styles.
+*/
 
+/*
+BEGIN navigation drawer and tab bar styles.
+*/
+#nav-drawer {
+	
+}
+
+#nav-drawer ul, #tab-bar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#tab-bar {
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 48px;
+	box-shadow: none;
+	transition: box-shadow 150ms ease-in-out;
+}
+
+#tab-bar.elevated {
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+}
+
+#tab-bar ul {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+#tab-bar ul li {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 48px;
+	line-height: 48px;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 0.0892857rem;
+	font-weight: 700;
+	border-bottom: 3px solid transparent;
+	opacity: 0.65;
+	transition: opacity 0.2s;
+}
+
+#tab-bar ul li.current-menu-item, #tab-bar ul li:hover {
+	opacity: 1;
+}
+
+#tab-bar ul li.current-menu-item {
+	border-color: inherit;
+}
+
+#tab-bar ul li a {
+	display: block;
+	margin: 0;
+	padding: 0 16px;
+	box-sizing: border-box;
+	color: inherit;
+	text-decoration: none;
+}
+/*
+END navigation drawer and tab bar styles.
+*/
+
+/*
+BEGIN header styles.
+*/
+#header {
+	padding-top: 48px;
+	height: 96px;
+	font-size: 1.5rem;
+}
+
+#header a {
+	color: inherit;
+	text-decoration: none;
+}
+/*
+END header styles.
+*/
+
+/*
+BEGIN footer styles.
+*/
 #footer {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	left: 0;
 }
+
 #footer a {
 	color: inherit;
 }
+
 #footer p, #footer ul {
 	margin: 0;
 }
+
 #footer-top-section {
 	height: 186px;
 }
+
 #footer-bottom-section {
 	height: 64px;
 }
+
 #footer-bottom-section .container {
 	justify-content: flex-end;
 }
-
+/*
+END footer styles.
+*/
 
 /*
-Styles for posts
+BEGIN post styles.
 */
 .post-date, .comment-metadata {
 	display: block;
@@ -289,12 +352,15 @@ Styles for posts
 	letter-spacing: 0.0892857rem;
 	font-weight: 700;
 }
+
 .post-thumbnail a img {
 	transition: opacity 0.2s;
 }
+
 .post-thumbnail a:hover img, .post-thumbnail a:focus img {
 	opacity: 0.85;
 }
+
 .sticky-post {
 	margin: 0 8px;
 	padding: 2px 6px;
@@ -308,9 +374,11 @@ Styles for posts
 	padding-left: 48px;
 	list-style-type: none;
 }
+
 .comment-author {
 	position: relative;
 }
+
 .comment-author .avatar {
 	position: absolute;
 	top: 0;
@@ -320,12 +388,16 @@ Styles for posts
 	margin: 4px 8px;
 	border-radius: 2px;
 }
+
 .comment-body {
 	margin-bottom: 24px;
 }
+/*
+END post styles.
+*/
 
 /*
-WordPress styles TODO: clean up
+BEGIN WordPress-specific styles.
 */
 img, video {
 	height: auto;
@@ -335,12 +407,17 @@ img, video {
 .alignleft {
 	float: left;
 }
+
 .alignright {
 	float: right;
 }
+
 .aligncenter {
-	clear: both;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	clear: both;
 }
+/*
+END WordPress-specific styles.
+*/
