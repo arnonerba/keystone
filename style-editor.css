@@ -35,7 +35,7 @@ h6 {
 	font-style: italic;
 }
 
-p, li {
+p, li, dt, dd {
 	margin: 0;
 	font-size: 1rem;
 	line-height: 1.5rem;
