@@ -114,6 +114,37 @@ END element-level styles.
 */
 
 /*
+BEGIN reusable component styles.
+*/
+.button {
+	position: relative;
+	color: inherit;
+	background: 0 0;
+	border: none;
+	border-radius: 4px;
+	margin: 0;
+	display: inline-block;
+	overflow: hidden;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	transition: background-color 150ms ease;
+	-webkit-appearance: none;
+}
+
+.button.material-icons {
+	box-sizing: border-box;
+	width: 48px;
+	height: 48px;
+	padding: 12px;
+	border-radius: 50%;
+}
+/*
+END reusable component styles.
+*/
+
+/*
 BEGIN page layout styles.
 */
 #wrapper {
