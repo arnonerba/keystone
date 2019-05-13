@@ -383,6 +383,13 @@ BEGIN navigation drawer and tab bar styles.
 	padding: 0 8px;
 	border-radius: 4px;
 }
+
+.toggle-nav {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 /*
 END navigation drawer and tab bar styles.
 */
