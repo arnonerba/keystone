@@ -524,3 +524,13 @@ img, video {
 /*
 END WordPress-specific styles.
 */
+
+@media screen and (max-width: 1095px) {
+	#tab-bar ul {
+		display: none;
+	}
+
+	.toggle-nav {
+		display: block;
+	}
+}
