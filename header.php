@@ -7,7 +7,13 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<nav id="nav-drawer"></nav>
+	<nav id="nav-drawer">
+		<header id="nav-drawer-header">
+			<span>Menu</span>
+		</header>
+		<hr>
+		<?php wp_nav_menu( array( 'container' => false, 'depth' => 1, 'theme_location' => 'main-menu' ) ); ?>
+	</nav>
 	<div id="wrapper">
 		<nav id="tab-bar">
 			<div class="container">
