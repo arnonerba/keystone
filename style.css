@@ -250,6 +250,25 @@ BEGIN page layout styles.
 	background-repeat: no-repeat;
 	padding-bottom: 112px;
 }
+
+#scrim {
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 0;
+	transition: opacity 150ms linear;
+}
+
+#scrim.visible {
+	opacity: 1;
+	visibility: visible;
+	z-index: 10;
+}
 /*
 END page layout styles.
 */
