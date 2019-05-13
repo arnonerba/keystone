@@ -11,7 +11,7 @@
 	<div id="wrapper">
 		<nav id="tab-bar">
 			<div class="container">
-				<?php wp_nav_menu( array( 'container' => false, 'depth' => 1, 'theme_location' => 'tab-bar' ) ); ?>
+				<?php wp_nav_menu( array( 'container' => false, 'depth' => 1, 'theme_location' => 'main-menu' ) ); ?>
 			</div>
 		</nav>
 		<header id="header">
