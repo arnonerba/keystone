@@ -11,6 +11,11 @@ hr {
 	border-color: rgba(0,0,0,0.12);
 }
 
+#nav-drawer {
+	color: #000;
+	background-color: #FFF;
+}
+
 #tab-bar {
 	color: #FFF;
 	background-color: #795548;
