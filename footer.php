@@ -7,7 +7,7 @@
 				<div class="flex-columns">
 					<div class="flex-column left">
 						<div class="flex-column-content">
-							test
+							<?php get_search_form(); ?>
 						</div>
 					</div>
 					<div class="flex-column right">
