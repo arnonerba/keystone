@@ -496,6 +496,10 @@ BEGIN post styles.
 .comment-body {
 	margin-bottom: 24px;
 }
+
+.bypostauthor {
+	display: block;
+}
 /*
 END post styles.
 */
