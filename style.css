@@ -431,6 +431,7 @@ BEGIN footer styles.
 
 #footer-top-section {
 	height: 186px;
+	overflow: hidden;
 }
 
 #footer-bottom-section {
