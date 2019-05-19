@@ -527,11 +527,41 @@ END WordPress-specific styles.
 */
 
 @media screen and (max-width: 1095px) {
+	/*
+	Default site width is 1000px + 96px padding.
+	*/
 	#tab-bar ul {
 		display: none;
 	}
 
 	.toggle-nav {
 		display: block;
+	}
+}
+
+@media screen and (max-width: 719px) {
+	.container {
+		padding: 0 24px;
+	}
+
+	#page-content {
+		padding: 24px;
+	}
+
+	.flex-column.left .flex-column-content {
+		padding-left: 48px;
+	}
+
+	.flex-column.right .flex-column-content {
+		padding-right: 48px;
+	}
+}
+
+@media screen and (max-width: 548px) {
+	/*
+	Default width of left flex column is 548px.
+	*/
+	.flex-column.right {
+		display: none;
 	}
 }
