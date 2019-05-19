@@ -2,7 +2,7 @@
 
 	<h1>Uh oh, we can't find that page.</h1>
 	<hr>
-	<p>It looks like that page doesn't exist. Maybe try a search?</p>
+	<p>That page doesn't exist. You can use the form below to search for it:</p>
 	<?php get_search_form(); ?>
 
 <?php get_footer(); ?>
