@@ -16,7 +16,7 @@
 	</nav>
 	<div id="wrapper">
 		<nav id="tab-bar">
-			<button class="button material-icons toggle-nav">menu</button>
+			<button class="button icon-button material-icons toggle-nav">menu</button>
 			<div class="container">
 				<?php wp_nav_menu( array( 'container' => false, 'depth' => 1, 'theme_location' => 'main-menu' ) ); ?>
 			</div>
