@@ -117,29 +117,52 @@ END element-level styles.
 /*
 BEGIN reusable component styles.
 */
-.button {
+.button, input[type='submit'] {
+	display: inline-block;
 	position: relative;
 	color: inherit;
 	background: 0 0;
 	border: none;
 	border-radius: 4px;
 	margin: 0;
-	display: inline-block;
+	padding: 0;
+	box-sizing: border-box;
 	overflow: hidden;
 	cursor: pointer;
 	text-decoration: none;
 	text-align: center;
 	vertical-align: middle;
-	transition: background-color 150ms ease;
+	transition: box-shadow 150ms;
+    user-select: none;
 	-webkit-appearance: none;
 }
 
-.button.material-icons {
+.button.icon-button {
 	box-sizing: border-box;
 	width: 48px;
 	height: 48px;
 	padding: 12px;
 	border-radius: 50%;
+}
+
+.button.button-raised, input[type='submit'] {
+	min-width: 64px;
+	height: 36px;
+	padding: 0 16px;
+	font-size: 0.875rem;
+	line-height: 36px;
+	text-transform: uppercase;
+	letter-spacing: 0.0892857rem;
+	font-weight: 700;
+	box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+.button.button-raised:hover, input[type='submit']:hover {
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+}
+
+.button.button-raised:active, input[type='submit']:active {
+	box-shadow: 0 5px 5px -3px rgba(0,0,0,0.2), 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12);
 }
 /*
 END reusable component styles.
