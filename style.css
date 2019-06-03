@@ -63,7 +63,7 @@ h6 {
 	font-style: italic;
 }
 
-p {
+p, figure, form {
 	margin: 0 0 16px 0;
 }
 
@@ -116,10 +116,6 @@ textarea, input[type='text'], input[type='search'] {
 	border-radius: 4px;
 	border-color: rgba(0,0,0,0.24);
 	background-color: rgba(0,0,0,0.12);
-}
-
-figure {
-	margin: 0 0 16px 0;
 }
 /*
 END element-level styles.
