@@ -202,7 +202,7 @@ BEGIN page layout styles.
 
 #main {
 	display: block;
-	padding: 0 0 250px 0;
+	padding: 0 0 300px 0;
 }
 
 #page-content {
@@ -464,7 +464,7 @@ BEGIN footer styles.
 }
 
 #footer-top-section {
-	height: 186px;
+	height: 236px;
 	overflow: hidden;
 }
 
