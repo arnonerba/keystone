@@ -4,6 +4,7 @@
 
 <section id="comments">
 	<?php if ( have_comments() ) { ?>
+		<hr>
 		<?php $comments_number = get_comments_number(); ?>
 		<h2>
 			<?php if ( $comments_number === '1' ) {
@@ -16,10 +17,12 @@
 			<?php wp_list_comments(); ?>
 		</ul>
 		<?php the_comments_pagination(); ?>
-		<hr>
 	<?php } ?>
 	<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) { ?>
 		<p><em>Comments are closed.</em></p>
 	<?php } ?>
-	<?php comment_form(); ?>
+	<?php if ( comments_open() ) { ?>
+		<hr>
+		<?php comment_form(); ?>
+	<?php } ?>
 </section>
