@@ -26,6 +26,7 @@
 	*/
 	} elseif ( is_archive() ) { ?>
 		<h1><?php the_archive_title(); ?></h1>
+		<p><em><?php the_archive_description(); ?></em></p>
 		<?php get_template_part( 'partials/blogroll' ); ?>
 	<?php
 	/*
