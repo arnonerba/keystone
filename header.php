@@ -39,7 +39,7 @@
 					</div>
 				</section>
 			<?php } else { ?>
-				<section id="page-showcase" style="background-image:url(<?php ( has_post_thumbnail() ) ? the_post_thumbnail_url() : header_image(); ?>)"></section>
+				<section id="page-showcase" style="background-image:url(<?php ( has_post_thumbnail() && ( is_single() || is_page() ) ) ? the_post_thumbnail_url() : header_image(); ?>)"></section>
 			<?php } ?>
 			<div class="container">
 				<section id="page-content">
