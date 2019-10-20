@@ -118,8 +118,8 @@ function keystone_widgets_init() {
 			'name' => __( 'Footer', 'keystone' ),
 			'id' => 'sidebar-2',
 			'description' => __( 'Add a widget here to replace the default search bar at the bottom of every page.', 'keystone' ),
-			'before_widget' => '<aside>',
-			'after_widget' => '</aside>',
+			'before_widget' => '',
+			'after_widget' => '',
 		)
 	);
 }
