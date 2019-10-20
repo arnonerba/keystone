@@ -7,7 +7,11 @@
 				<div class="flex-columns">
 					<div class="flex-column left">
 						<div class="flex-column-content">
-							<?php get_search_form(); ?>
+							<?php if ( is_active_sidebar( 'sidebar-2' ) ) {
+								dynamic_sidebar( 'sidebar-2' );
+							} else {
+								the_widget( 'WP_Widget_Search' );
+							} ?>
 						</div>
 					</div>
 					<div class="flex-column right">
