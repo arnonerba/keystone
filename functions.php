@@ -97,6 +97,34 @@ if ( ! function_exists( 'keystone_setup' ) ) {
 }
 add_action( 'after_setup_theme', 'keystone_setup' );
 
+function keystone_widgets_init() {
+	/*
+	Register the homepage widget area.
+	*/
+	register_sidebar(
+		array(
+			'name' => __( 'Homepage', 'keystone' ),
+			'id' => 'sidebar-1',
+			'description' => __( 'Add a text widget here to replace the placeholder text on the homepage.', 'keystone' ),
+			'before_widget' => '',
+			'after_widget' => '',
+		)
+	);
+	/*
+	Register the footer widget area.
+	*/
+	register_sidebar(
+		array(
+			'name' => __( 'Footer', 'keystone' ),
+			'id' => 'sidebar-2',
+			'description' => __( 'Add a widget here to replace the default search bar at the bottom of every page.', 'keystone' ),
+			'before_widget' => '<aside>',
+			'after_widget' => '</aside>',
+		)
+	);
+}
+add_action( 'widgets_init', 'keystone_widgets_init' );
+
 function keystone_enqueue_scripts_styles() {
 	/*
 	Enqueue jQuery bundle and custom scripts.
