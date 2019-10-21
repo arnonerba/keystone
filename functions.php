@@ -194,5 +194,5 @@ function keystone_sanitize_colorscheme( $input ) {
 }
 
 function keystone_default_homepage_widget() {
-	echo "<p>" . esc_html( __( 'Welcome to Keystone! You can replace this placeholder text with your own content by adding a text widget to the "Homepage" sidebar in the Dashboard under Appearance > Widgets.', 'keystone' ) ) . "</p>";
+	echo '<p>' . esc_html( __( 'Welcome to Keystone! You can replace this placeholder text with your own content by adding a text widget to the "Homepage" sidebar in the Dashboard under Appearance > Widgets.', 'keystone' ) ) . '</p>';
 }
