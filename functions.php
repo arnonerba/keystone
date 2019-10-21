@@ -82,7 +82,7 @@ if ( ! function_exists( 'keystone_setup' ) ) {
 		*/
 		register_nav_menus(
 			array(
-				'main-menu' => __( 'Main Menu', 'keystone' ),
+				'main-menu'   => __( 'Main Menu', 'keystone' ),
 				'footer-menu' => __( 'Footer Menu', 'keystone' ),
 			)
 		);
@@ -103,11 +103,11 @@ function keystone_widgets_init() {
 	*/
 	register_sidebar(
 		array(
-			'name' => __( 'Homepage', 'keystone' ),
-			'id' => 'sidebar-1',
-			'description' => __( 'Add a text widget here to replace the placeholder text on the homepage.', 'keystone' ),
+			'name'          => __( 'Homepage', 'keystone' ),
+			'id'            => 'sidebar-1',
+			'description'   => __( 'Add a text widget here to replace the placeholder text on the homepage.', 'keystone' ),
 			'before_widget' => '',
-			'after_widget' => '',
+			'after_widget'  => '',
 		)
 	);
 	/*
@@ -115,11 +115,11 @@ function keystone_widgets_init() {
 	*/
 	register_sidebar(
 		array(
-			'name' => __( 'Footer', 'keystone' ),
-			'id' => 'sidebar-2',
-			'description' => __( 'Add a widget here to replace the default search bar at the bottom of every page.', 'keystone' ),
+			'name'          => __( 'Footer', 'keystone' ),
+			'id'            => 'sidebar-2',
+			'description'   => __( 'Add a widget here to replace the default search bar at the bottom of every page.', 'keystone' ),
 			'before_widget' => '',
-			'after_widget' => '',
+			'after_widget'  => '',
 		)
 	);
 }
@@ -166,13 +166,13 @@ function keystone_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'colorscheme',
 		array(
-			'section'  => 'colors',
-			'label'    => __( 'Color Scheme', 'keystone' ),
-			'type'     => 'radio',
-			'choices'  => array(
-				'brown'  => __( 'So Brown', 'keystone' ),
-				'white'  => __( 'Clearly White', 'keystone' ),
-				'black'  => __( 'Fairly Dark', 'keystone' ),
+			'section' => 'colors',
+			'label'   => __( 'Color Scheme', 'keystone' ),
+			'type'    => 'radio',
+			'choices' => array(
+				'brown' => __( 'So Brown', 'keystone' ),
+				'white' => __( 'Clearly White', 'keystone' ),
+				'black' => __( 'Fairly Dark', 'keystone' ),
 			),
 		)
 	);
