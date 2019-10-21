@@ -140,7 +140,7 @@ BEGIN reusable component styles.
 	text-align: center;
 	vertical-align: middle;
 	transition: box-shadow 150ms;
-    user-select: none;
+	user-select: none;
 }
 
 .button.icon-button {
