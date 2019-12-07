@@ -18,11 +18,10 @@
 		</ul>
 		<?php the_comments_pagination(); ?>
 	<?php } ?>
-	<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) { ?>
-		<p><em>Comments are closed.</em></p>
-	<?php } ?>
 	<?php if ( comments_open() ) { ?>
 		<hr>
 		<?php comment_form(); ?>
+	<?php } else if ( have_comments() && post_type_supports( get_post_type(), 'comments' ) ) { ?>
+		<p><em>Comments are closed.</em></p>
 	<?php } ?>
 </section>
