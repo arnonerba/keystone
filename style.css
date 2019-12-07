@@ -378,7 +378,7 @@ BEGIN navigation drawer and tab bar styles.
 	font-weight: 700;
 	border-bottom: 3px solid transparent;
 	opacity: 0.65;
-	transition: opacity 0.2s;
+	transition: opacity 200ms;
 }
 
 #nav-drawer ul li {
@@ -488,7 +488,7 @@ BEGIN post styles.
 }
 
 .post-thumbnail a img {
-	transition: opacity 0.2s;
+	transition: opacity 200ms;
 }
 
 .post-thumbnail a:hover img, .post-thumbnail a:focus img {
