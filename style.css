@@ -412,6 +412,27 @@ BEGIN navigation drawer and tab bar styles.
 	margin: 8px;
 	padding: 0 8px;
 	border-radius: 4px;
+	transition: background-color 200ms;
+}
+
+#nav-drawer ul li a:hover {
+	background-color: rgba(0,0,0,0.12);
+}
+
+#nav-drawer ul li a:active {
+	background-color: rgba(0,0,0,0.24);
+}
+
+#nav-drawer ul li.current-menu-item a {
+	background-color: rgba(0,0,0,0.12);
+}
+
+#nav-drawer ul li.current-menu-item a:hover {
+	background-color: rgba(0,0,0,0.18);
+}
+
+#nav-drawer ul li.current-menu-item a:active {
+	background-color: rgba(0,0,0,0.24);
 }
 
 .toggle-nav {
