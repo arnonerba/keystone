@@ -77,7 +77,7 @@ p, li, dt, dd {
 	letter-spacing: 0.015625rem;
 }
 
-img, video {
+img, video, figure {
 	height: auto;
 	max-width: 100%;
 }
