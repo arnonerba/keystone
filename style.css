@@ -564,10 +564,12 @@ END post styles.
 BEGIN WordPress-specific styles.
 */
 .alignleft {
+	margin-right: 16px;
 	float: left;
 }
 
 .alignright {
+	margin-left: 16px;
 	float: right;
 }
 
