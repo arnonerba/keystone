@@ -77,6 +77,11 @@ p, li, dt, dd {
 	letter-spacing: 0.015625rem;
 }
 
+img, video {
+	height: auto;
+	max-width: 100%;
+}
+
 hr {
 	display: block;
 	clear: both;
@@ -558,11 +563,6 @@ END post styles.
 /*
 BEGIN WordPress-specific styles.
 */
-img, video {
-	height: auto;
-	max-width: 100%;
-}
-
 .alignleft {
 	float: left;
 }
