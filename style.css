@@ -102,7 +102,6 @@ hr {
 textarea, input, button, select {
 	font-family: inherit;
 	font-size: inherit;
-	box-sizing: border-box;
 	color: inherit;
 	-webkit-appearance: none;
 }
@@ -110,7 +109,6 @@ textarea, input, button, select {
 pre, code, tt, kbd, samp {
 	padding: 3px;
 	font-family: monospace;
-	box-sizing: border-box;
 	border-radius: 4px;
 	border: none;
 	background-color: rgba(0,0,0,0.12);
@@ -146,7 +144,6 @@ BEGIN reusable component styles.
 	border-radius: 4px;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	overflow: hidden;
 	cursor: pointer;
 	text-decoration: none;
@@ -157,7 +154,6 @@ BEGIN reusable component styles.
 }
 
 .button.icon-button {
-	box-sizing: border-box;
 	width: 48px;
 	height: 48px;
 	padding: 12px;
@@ -218,7 +214,6 @@ BEGIN page layout styles.
 	position: relative;
 	margin: -112px 0 48px 0;
 	padding: 48px;
-	box-sizing: border-box;
 	width: 100%;
 	overflow: hidden;
 	border-radius: 4px;
@@ -249,7 +244,6 @@ BEGIN page layout styles.
 	flex: 1 1 0%;
 	max-width: 548px;
 	padding: 48px;
-	box-sizing: border-box;
 }
 
 .flex-column.left .flex-column-content {
@@ -327,7 +321,6 @@ BEGIN navigation drawer and tab bar styles.
 	bottom: 0;
 	left: -256px;
 	width: 256px;
-	box-sizing: border-box;
 	overflow: auto;
 	transition: all 200ms;
 	-webkit-overflow-scrolling: touch;
@@ -348,7 +341,6 @@ BEGIN navigation drawer and tab bar styles.
 	align-items: center;
 	height: 48px;
 	padding: 16px;
-	box-sizing: border-box;
 	font-size: 1.25rem;
 	font-weight: 700;
 }
@@ -382,7 +374,6 @@ BEGIN navigation drawer and tab bar styles.
 #tab-bar ul li {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	height: 48px;
 	line-height: 48px;
 	font-size: 0.875rem;
@@ -410,7 +401,6 @@ BEGIN navigation drawer and tab bar styles.
 
 #tab-bar ul li a, #nav-drawer ul li a {
 	display: block;
-	box-sizing: border-box;
 	color: inherit;
 	text-decoration: none;
 }
