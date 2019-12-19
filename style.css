@@ -652,17 +652,17 @@ BEGIN WordPress-specific styles.
 	overflow: hidden;
 	word-wrap: normal !important;
 	word-break: normal;
-	clip: rect(1px, 1px, 1px, 1px);
+	clip: rect(1px,1px,1px,1px);
 	-webkit-clip-path: inset(50%);
 	clip-path: inset(50%);
 }
 
 .screen-reader-text:focus {
 	display: block;
-	top: 5px;
-	right: 5px;
+	top: 8px;
+	right: 8px;
 	z-index: 100000;
-	padding: 15px 23px 14px;
+	padding: 16px 24px;
 	width: auto;
 	height: auto;
 	border-radius: 4px;
