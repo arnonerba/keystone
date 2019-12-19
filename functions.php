@@ -61,7 +61,7 @@ if ( ! function_exists( 'keystone_setup' ) ) {
 					'url'           => '%s/images/computers.png',
 					'thumbnail_url' => '%s/images/computers.png',
 					'description'   => __( 'Computers', 'keystone' ),
-				)
+				),
 			)
 		);
 		/*
