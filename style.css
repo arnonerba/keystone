@@ -582,9 +582,64 @@ BEGIN WordPress-specific styles.
 
 .wp-caption {}
 
-.wp-caption-text {
+.wp-caption-text, .gallery-caption {
 	margin: 8px;
 	text-align: center;
+}
+
+.gallery {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.gallery-item {
+	margin: 16px 0;
+	padding: 0 16px;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-item img {
+	width: 100%;
+}
+
+.gallery-item a img {
+	transition: opacity 200ms;
+}
+
+.gallery-item a:hover img, .gallery-item a:focus img {
+	opacity: 0.85;
 }
 /*
 END WordPress-specific styles.
